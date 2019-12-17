@@ -13,27 +13,7 @@ import {
 import * as serviceWorker from './serviceWorker';
 import Productslist from './components/products/productslist';
 import Registerlist from './components/registers/registerlist';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import Registration from './components/registration/registration';
 
 
 
@@ -42,13 +22,12 @@ export default class App extends Component {
     render() {
         return (
             <Switch>
+
                 <Route exact path="/" render={() => (
                     <div>
-                        <Productslist />
+                        <Registration />
                     </div>
-                )} />
-                {/*<Route exact path="/sth" component={}/>*/}
-            </Switch>
+                )} />            </Switch>
         )
     }
 }
@@ -58,6 +37,20 @@ ReactDOM.render(
     </Router>
     , document.getElementById('root')
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

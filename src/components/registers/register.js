@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
-export default class register extends Component {
+
+export default class Register extends Component {
     render() {
         return (
             <div>
-                <div>
+                <div>first name:
                     {this.props.firstname}
                 </div>
 
-                <div>
+                <div>last name:
                     {this.props.lastname}
                 </div>
 
-                <div>
+                <div>age:
                     {this.props.age}
                 </div>
 
-                <div>
+                <div>job:
                     {this.props.job}
                 </div>
-
-                <div>
-                    {this.props.job}
-                </div>
-
             </div>
         )
     }
