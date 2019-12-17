@@ -1,10 +1,42 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
+    useParams
+} from "react-router-dom";
 
 import * as serviceWorker from './serviceWorker';
-import './static/css/normalizer.css'
+import Productslist from './components/products/productslist';
+import Registerlist from './components/registers/registerlist';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default class App extends Component {
     render() {
@@ -12,22 +44,23 @@ export default class App extends Component {
             <Switch>
                 <Route exact path="/" render={() => (
                     <div>
-                        سلام
+                        <Productslist />
                     </div>
-                )}/>
+                )} />
                 {/*<Route exact path="/sth" component={}/>*/}
             </Switch>
         )
     }
 }
-
-
 ReactDOM.render(
-    <BrowserRouter>
+    <Router>
         <App />
-    </BrowserRouter>
+    </Router>
     , document.getElementById('root')
 );
+
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

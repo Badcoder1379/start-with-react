@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-container{
+    width: 80%;
+    background-color: red;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin: auto;
+}
+
+
+.button{
+    height: 100PX;
+    width: 100%;
+    background-color: green;
+    font-size: 70px;
+    font-weight: bold;
+}
